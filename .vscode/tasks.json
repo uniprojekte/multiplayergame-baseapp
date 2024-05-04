@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "watchify",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: watchify",
+			"detail": "watchify for bundle.js"
+		}
+	]
+}

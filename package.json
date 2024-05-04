@@ -1,0 +1,15 @@
+{
+  "name": "Multiplayer-Baseapp",
+  "version": "1.0.0",
+  "description": "A tiny extension of Browsergame-Baseapp towards a multiplayer game",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watchify": "watchify ./client/main.js -d -o ./public/bundle.js"
+  },
+  "keywords": [],
+  "author": "Ralf Peters",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.17.0"
+  }
+}
