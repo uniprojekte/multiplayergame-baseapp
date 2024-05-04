@@ -6,10 +6,10 @@ The game logic now resides on the server which regulary publishes the actual gam
 
 Communication between server and its clients employs both http and websockets. 
 The server uses http to provide static content such as index.html to the clients.
-Dynamic content such as the actual gamestate or clientside actions are exchanged via websockets.
+Dynamic content such as the actual game state or clientside actions are exchanged via websockets.
 Some basic server functionality is provided by the minimalistic server implementation tinyserver.js
 
-Marshalling of the gamestate from server to client is done by a simple serialization of ElementList via JSON.stringify. 
+Marshalling of the game state from server to client is done by a simple serialization of ElementList via JSON.stringify. 
 To facilitate marshalling, the baseclass Element now has an additionl attribute classType to identify its type on the clientside.
 
 Note: The multiplayergame-baseapp has an educational focus and provides some basic, object-oriented infrastructure. 
