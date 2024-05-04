@@ -1,7 +1,7 @@
 # multiplayergame-baseapp
 
 The multiplayergame-baseapp is a tiny client server application that may serve as a starting point to develop your own online multiplayer game. 
-It builds on the pure clientside [browsergame-baseapp] (https://github.com/uniprojekte/browsergame-baseapp). 
+It builds on the pure clientside [browsergame-baseapp](https://github.com/uniprojekte/browsergame-baseapp). 
 The game logic now resides on the server which regulary publishes the actual game state to all clients. 
 
 Marshalling from server to client is done by a simple serialization of ElementList via JSON.stringify. 
