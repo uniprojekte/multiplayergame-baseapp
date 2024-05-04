@@ -4,8 +4,16 @@ The multiplayergame-baseapp is a tiny client server application that may serve a
 It builds on the pure clientside [browsergame-baseapp](https://github.com/uniprojekte/browsergame-baseapp). 
 The game logic now resides on the server which regulary publishes the actual game state to all clients. 
 
-Marshalling from server to client is done by a simple serialization of ElementList via JSON.stringify. 
+Communication between server and its clients uses both http and websockets. 
+The server uses http to provide static content such as index.html to the clients.
+Dynamic content such as the actual gamestate or clientside actions are exchanged via websockets.
+Some basic server functionality is provided by the minimalistic server implementation tinyserver.js
+
+Marshalling of the gamestate from server to client is done by a simple serialization of ElementList via JSON.stringify. 
 To facilitate marshalling, the baseclass Element now has an additionl attribute classType to identify its type on the clientside.
+
+Note: The multiplayergame-baseapp has an educational focus and provides some basic, object-oriented infrastructure. 
+It leaves aside security relevant features that should be considered in an productive environment. 
 
 How to start
 ------------
